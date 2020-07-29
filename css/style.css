@@ -1,136 +1,56 @@
-#background { /* רקע משחק */
-    background-color: black;
-    width: 1285px;
-    height: 670px;
-    position: relative;
-    float: left;
-    left: 10px;
-}
-#spinner { /* דייב */
-    padding: 15px 15px;
-    background-color: chartreuse;
-    text-align: center;
-    position: absolute;
-   /*  top: 95px;
-    left: 20px; */
-    animation: rotate infinite linear 0s;
-}
-#title { /* כותרת */
-    background-color: rgb(248, 244, 31);
-    height: 50px;
-    border: black solid 10px;
-    margin: 10px;
-}
-#table { /* טבלה */
-    background-color: rgb(29, 216, 230);
-    width: 354px;
-    height: 650px;
-    position: relative;
-    float: right;
-    left: -10px;
-    border: solid 10px;
-}
-#table1 {
-    background-color: rgb(101, 188, 223);
-    width: 156px;
-    height: 100px;
-    position: relative;
-    float: right;
-    top: 5px;
-    left: -193px;
-}
-#table2 {
-    background-color: rgb(101, 188, 223);
-    width: 345px;
-    height: 100px;
-    position: relative;
-    float: right;
-    top: 10px;
-    left: -4px;
-}
-#table3 {
-    background-color: rgb(101, 188, 223);
-    width: 182px;
-    height: 100px;
-    position: relative;
-    float: right;
-    top: -194px;
-    left: -4px;
-}
-#table4 {
-    background-color: rgb(101, 188, 223);
-    width: 345px;
-    height: 100px;
-    position: relative;
-    float: right;
-    top: -85px;
-    left: -4px;
-}
-#table5 {
-    background-color: rgb(101, 188, 223);
-    width: 345px;
-    height: 100px;
-    position: relative;
-    float: right;
-    top: -80px;
-    left: -4px;
-}
-#table6 {
-    background-color: rgb(101, 188, 223);
-    width: 345px;
-    height: 221px;
-    position: relative;
-    float: right;
-    top: -75px;
-    left: -4px;
+/* CSS Reset */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
-#TopPlayer {
-    font-size: 25px;
-}
+body {
+    background-image: url("../assets/images/1.jpg"); /* תמונת רקע */
+    background-attachment: scroll;
+    background-repeat: no-repeat; /* לא לשכפל את התמונה */
+    background-position: center; /* למרכז את התמונה */
+    background-size: cover; /* למרוח את התמונה על כל המסך */
+    display: flex;
 
-#startGame { /* טקסט תחילת משחק */
-    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    /* Center the page horizontally */
+    align-items: center;
+    /* Center the page vertically */
+    font-family: 'Lato', sans-serif;
 }
-#startGame:hover { /* עובר על הכותרת תחילת משחק */
-    cursor: pointer;
+/* Watch */
+#timer {
+    font-size: 150px;
 }
-
-#spinner:hover { /* עובר על הדייב */
-    cursor: pointer;
-}
+/* Watch */
 h1 {
-    font-size: 25px;
-    text-align: center;
+    color: white;
+    font-size: 190px;
 }
-#points {
-    text-align: left;
-    font-size: 45px;
+/* text */
+h2 {
+    font-family: 'Notable', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 150px;
+    color: rgb(88, 84, 84);
 }
-#points2 {
-    text-align: left;
-    font-size: 45px;
+/* icon */
+h3 {
+    color: rgb(53, 36, 180);
+    font-size: 70px;
 }
-#points3 {
-    text-align: left;
-    font-size: 45px;
+/* button */
+.btn {
+    color: rgb(211, 6, 6);
+    font-size: 70px;
 }
-#points4 {
-    text-align: left;
-    font-size: 45px;
+/* (Clickable) שינוי צורה של העכבר  */
+button:hover {
+    cursor: pointer;
 }
-#points5 {
-    text-align: left;
-    font-size: 45px;
-}
-#points6 {
-    text-align: left;
-    font-size: 45px;
-}
-
-@keyframes rotate { /* מסתובב */
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
-@media screen and (max-width:414px) {} /* רספונסיבי */
-
+/* fonts google */
+@import url('https://fonts.googleapis.com/css2?family=Notable&family=Playfair+Display&display=swap');
